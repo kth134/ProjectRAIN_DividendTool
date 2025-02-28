@@ -7,9 +7,10 @@ import numpy as np
 from datetime import datetime, timedelta
 import time
 import os
+import streamlit as st
 
 # Load FMP API Key from Environment Variables
-FMP_API_KEY = os.getenv('FMP_API_KEY')
+FMP_API_KEY = st.secrets["api"]["FMP_API_KEY"]
 
 if not FMP_API_KEY:
     st.error("FMP API key not found. Set the 'FMP_API_KEY' environment variable.")
