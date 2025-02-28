@@ -1,1 +1,6 @@
 streamlit
+pandas
+requests
+statsmodels
+matplotlib
+numpy
